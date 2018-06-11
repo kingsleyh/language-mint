@@ -2,3 +2,12 @@
   main:
     prefix: 'main'
     body: 'component Main {\n\tfun render : Html {\n\t\t<$1/>\n\t}\n}'
+  store:
+    prefix: 'store'
+    body: 'store ${1:StoreName} {\n\t$0\n}'
+  store_property:
+    prefix: 'prop'
+    body: 'property ${1:name} : ${2:Type} = ${0:Value}'
+  function:
+    prefix: 'fun'
+    body: 'fun ${1:name}(${2:object} : ${3:String}) : ${4:Void} {\n\t$0\n}'
