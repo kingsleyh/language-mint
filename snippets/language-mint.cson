@@ -1,0 +1,4 @@
+'.source.mint':
+  main:
+    prefix: 'main'
+    body: 'component Main {\n\tfun render : Html {\n\t\t<$1/>\n\t}\n}'
