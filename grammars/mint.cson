@@ -25,7 +25,7 @@ repository:
       }
       {
         name: 'comment.line.mint'
-        match: '\\#.*'
+        match: '\\/\\*.*'
       }
     ]
   strings:

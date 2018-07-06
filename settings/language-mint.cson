@@ -1,3 +1,4 @@
 '.source.mint':
   'editor':
-    'commentStart': '# '
+    'commentStart': '/* '
+    'commentEnd': ' */'
