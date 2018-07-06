@@ -6,6 +6,7 @@ limitLineLength: false
 patterns: [
   {include: '#keywords'}
   {include: '#strings'}
+  {include: '#comments'}
 ]
 
 repository:
@@ -23,10 +24,6 @@ repository:
         name: 'constant.numeric.mint'
         match: '\\b(-)?[0-9]([0-9].)*\\b'
       }
-      {
-        name: 'comment.line.mint'
-        match: '\\/\\*.*'
-      }
     ]
   strings:
     name: 'string.quoted.double.mint'
@@ -38,3 +35,7 @@ repository:
         match: '\\\\.'
       }
     ]
+  comments:
+    name: 'comment.block.mint'
+    begin: '\\/\\*'
+    end: '\\*\\/'
